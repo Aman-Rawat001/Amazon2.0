@@ -1,0 +1,18 @@
+.cardBox .cardImg .imgBox {
+  width: 10rem;
+  height: 14rem;
+}
+.cardBox .cardImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardImg {
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.cardImg:hover {
+  transform: scale(1.05);
+}

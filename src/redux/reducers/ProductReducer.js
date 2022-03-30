@@ -15,6 +15,21 @@ export const selectedProductReducer = (state = {}, action) => {
   switch (action.type) {
     case "SELECTED_PRODUCTS":
       return { ...state, ...action.payload };
+    case "REFRESH_SELECTED_PRODUCTS":
+      return {};
+    default:
+      return state;
+  }
+};
+
+const addtocartInitState = {
+  cartProducts: [],
+};
+
+export const addToCartReducer = (state = addtocartInitState, action) => {
+  switch (action.type) {
+    case "ADD_TO_CART":
+      return { ...state, cartProducts: action.payload };
     default:
       return state;
   }

@@ -1,0 +1,6 @@
+.productDetails .productImg {
+  width: 50%;
+}
+.productDetails .row > div {
+  border: 1px solid gainsboro;
+}

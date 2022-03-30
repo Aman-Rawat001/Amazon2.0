@@ -1,11 +1,10 @@
 import React from "react";
 import ProductListing from "../ProductListing/ProductListing";
+import "./Homepage.css";
 
 const Homepage = () => {
   return (
     <div className="">
-      <h4>Homepage</h4>
-      <hr />
       <ProductListing />
     </div>
   );

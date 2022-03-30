@@ -10,3 +10,15 @@ export const selectedProducts = (products) => {
     payload: products,
   };
 };
+export const refreshSelectedProducts = () => {
+  return {
+    type: "REFRESH_SELECTED_PRODUCTS",
+  };
+};
+
+export const addToCart = (product) => {
+  return {
+    type: "ADD_TO_CART",
+    payload: product,
+  };
+};
