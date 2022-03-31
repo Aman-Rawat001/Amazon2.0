@@ -24,7 +24,11 @@ const ProductListing = () => {
     fetchProducts();
   }, []);
 
-  return <div>{loading ? <div>Loading...</div> : <ProductComponent />}</div>;
+  return (
+    <div className="container">
+      {loading ? <div>Loading...</div> : <ProductComponent />}
+    </div>
+  );
 };
 
 export default ProductListing;

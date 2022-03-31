@@ -1,18 +1,36 @@
 .cardBox .cardImg .imgBox {
-  width: 10rem;
-  height: 14rem;
-}
-.cardBox .cardImg img {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardBox .cardImg img {
+  width: 10rem;
+  height: 14rem;
 }
 
 .cardImg {
   border: 1px solid darkgray;
   border-radius: 5px;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .cardImg:hover {
   transform: scale(1.05);
+}
+
+.header p span {
+  font-size: 1.4rem;
+}
+.card-moreDetails {
+  text-align: center;
+  border: 1px solid #0d6efd;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.cardBox .moreDetails {
+  color: blue;
+  text-decoration: none;
 }
