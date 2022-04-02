@@ -1,3 +1,8 @@
+.homePage {
+  position: relative;
+  /* z-index: -1; */
+  background-color: #efefef;
+}
 .cardBox .cardImg .imgBox {
   width: 100%;
   height: 100%;
@@ -11,9 +16,12 @@
 }
 
 .cardImg {
-  border: 1px solid darkgray;
+  /* border: 1px solid darkgray; */
+  /* position: absolute; */
+  /* z-index: 10000 !important; */
   border-radius: 5px;
   padding-top: 1rem;
+  background-color: white;
 }
 
 .cardImg:hover {
@@ -30,7 +38,34 @@
   margin-bottom: 4px;
   cursor: pointer;
 }
+
 .cardBox .moreDetails {
+  position: sticky;
+  z-index: 1000;
   color: blue;
   text-decoration: none;
+}
+.cardBox button {
+  background-color: #d2a534;
+}
+.heroScreen img {
+  /* position: relative; */
+  /* z-index: -10 !important; */
+  margin-bottom: -270px;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(180deg, #744, rgba(226, 232, 240, 0));
+}
+.product-listing {
+  position: relative;
+  z-index: 5;
+}
+.footer {
+  background-color: #131921;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  color: white;
 }

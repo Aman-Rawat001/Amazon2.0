@@ -25,7 +25,7 @@ const ProductListing = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-fluid product-listing">
       {loading ? <div>Loading...</div> : <ProductComponent />}
     </div>
   );

@@ -4,11 +4,12 @@ import Header from "./components/header/Header";
 import Homepage from "./components/Homepage/Homepage";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import AddToCart from "./components/addToCart/AddToCart";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <div className="">
+      <div className="App">
         <BrowserRouter>
           <Header />
           <Routes>
@@ -22,6 +23,7 @@ function App() {
             <Route>404 Not Found!</Route>
           </Routes>
         </BrowserRouter>
+        <Footer />
       </div>
     </>
   );

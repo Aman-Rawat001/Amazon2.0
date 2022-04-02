@@ -1,11 +1,12 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .headerNav {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #131921;
   box-shadow: 0px 0px 5px 0px #a5a5a5;
   z-index: 99;
 }
@@ -14,4 +15,62 @@
   font-style: oblique;
   color: darkslategray;
   text-shadow: 1px 1px 1px orange;
+}
+.header .logo {
+  width: 7rem;
+}
+.header .delivertouser {
+  color: white;
+}
+.NavflexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavflexBox .navContent {
+}
+
+.NavflexBox .navContent p {
+  margin-bottom: 0px;
+}
+.NavflexBox .navContent .navLightFont {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 550;
+}
+.NavflexBox .navContent .navBoldFont {
+  font-size: 14px;
+  color: #fff;
+  padding: 0 0 1px;
+  font-weight: 650;
+}
+.navSearchBar {
+  width: 50%;
+  display: flex;
+}
+.navSearchBar input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.navSearchBar button {
+  background-color: #cd9042;
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 0;
+  padding: 8px;
+  padding-right: 11px;
+  padding-left: 11px;
+  border-bottom-left-radius: 0;
+}
+.cartItems {
+  color: white;
+  text-decoration: none;
+}
+.cartItems p {
+  margin: 0;
+  color: #cd9042;
+  font-weight: bold;
+}
+.cartItems p span {
+  color: white;
 }

@@ -27,8 +27,8 @@ const ProductComponent = () => {
 
   return (
     <div>
-      <div className="container mt-4">
-        <strong> Latest Products </strong>
+      <div className="container-fluid mt-4">
+        {/* <strong> Latest Products </strong> */}
         <div className="row cardBox">
           {products.map((val, index) => {
             return (
