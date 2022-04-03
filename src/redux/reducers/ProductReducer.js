@@ -30,6 +30,15 @@ export const addToCartReducer = (state = addtocartInitState, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
       return { ...state, cartProducts: action.payload };
+
+    case "DELETE_CART_PRODUCT":
+      const newList = state.cartProducts.filter(
+        (products) => products.id !== action.payload
+      );
+      return {
+        ...state,
+        cartProducts: newList,
+      };
     default:
       return state;
   }

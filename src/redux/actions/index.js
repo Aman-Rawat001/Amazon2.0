@@ -22,3 +22,9 @@ export const addToCart = (product) => {
     payload: product,
   };
 };
+export const deleteCartProduct = (id) => {
+  return {
+    type: "DELETE_CART_PRODUCT",
+    payload: id,
+  };
+};

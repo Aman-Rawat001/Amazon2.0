@@ -24,8 +24,8 @@
   background-color: white;
 }
 
-.cardImg:hover {
-  transform: scale(1.05);
+.cardImg:hover #productImage {
+  transform: scale(1.04);
 }
 
 .header p span {

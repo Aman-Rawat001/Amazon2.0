@@ -34,7 +34,7 @@ const ProductComponent = () => {
             return (
               <div className="col-lg-4">
                 <div class="cardImg m-2">
-                  <div className="imgBox">
+                  <div className="imgBox" id="productImage">
                     <img src={val.image} className="card-img-top" alt="..." />
                   </div>
                   <div class="card-body">

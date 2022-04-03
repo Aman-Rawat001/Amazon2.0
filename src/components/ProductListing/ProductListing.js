@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/index";
 
 const ProductListing = () => {
-  // const products = useSelector((state) => state.ProductReducer.products);
+  const products = useSelector((state) => state.ProductReducer.products);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
@@ -21,12 +21,22 @@ const ProductListing = () => {
   };
 
   useEffect(() => {
-    fetchProducts();
+    if (products.length == 0) {
+      fetchProducts();
+    } else {
+      setLoading(false);
+    }
   }, []);
 
   return (
     <div className="container-fluid product-listing">
-      {loading ? <div>Loading...</div> : <ProductComponent />}
+      {loading ? (
+        <div>
+          <strong>Loading Products...</strong>
+        </div>
+      ) : (
+        <ProductComponent />
+      )}
     </div>
   );
 };
