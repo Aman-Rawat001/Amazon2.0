@@ -61,7 +61,7 @@ const AddToCart = () => {
             )}
             {cartProducts.map((value, idx) => {
               return (
-                <div className="col-lg-8 cartBox ms-3">
+                <div className="col-lg-8 cartBox ">
                   <div
                     className="deleteCartItem"
                     onClick={() => dispatch(deleteCartProduct(value.id))}

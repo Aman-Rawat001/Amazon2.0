@@ -4,3 +4,6 @@
 .productDetails .row > div {
   border: 1px solid gainsboro;
 }
+.shopNowBtn {
+  background-color: #cd9042 !important;
+}

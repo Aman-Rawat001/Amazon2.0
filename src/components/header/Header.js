@@ -22,7 +22,7 @@ const Header = () => {
           <NavLink to="/">
             <img className="logo" src={logo} alt="logo" />
           </NavLink>
-          <div className="delivertouser  NavflexBox">
+          <div className="delivertouser  NavflexBox hiddenMobile">
             <div>
               <FontAwesomeIcon icon={faLocationDot} />
             </div>

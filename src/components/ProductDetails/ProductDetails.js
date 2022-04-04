@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./ProductDetails.css";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { selectedProducts, refreshSelectedProducts } from "../../redux/actions";
 import axios from "axios";
@@ -50,7 +50,9 @@ const ProductDetails = () => {
             </p>
             <p>{product.description}</p>
             <h6>${product.price}</h6>
-            <button className="btn btn-primary">Shop Now</button>
+            <NavLink to="/add-to-cart">
+              <button className="btn shopNowBtn">Shop Now</button>
+            </NavLink>
           </div>
         </div>
       </div>

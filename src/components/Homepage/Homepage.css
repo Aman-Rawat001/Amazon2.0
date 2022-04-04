@@ -69,3 +69,31 @@
   padding-top: 1rem;
   color: white;
 }
+
+/* --------------media query-------------- */
+
+@media screen and (max-width: 575px) {
+  .navSearchBar {
+    display: none;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+  .header .logo {
+    width: 5rem;
+  }
+  .heroScreen img {
+    margin-bottom: -102px;
+  }
+  .subTotalItems {
+    position: inherit !important;
+  }
+  .subTotalItems > div {
+    position: inherit !important;
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  .subTotalItems .cartBox {
+    margin-left: 0 !important;
+  }
+}
