@@ -3,6 +3,8 @@ import "./ProductComponent.css";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { addToCart } from "../../redux/actions/index";
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
 
 const ProductComponent = () => {
   const [productSelecter, setProductSelecter] = useState([]);
@@ -40,6 +42,10 @@ const ProductComponent = () => {
                   <div class="card-body">
                     <h5 class="card-title">{val.title}</h5>
                     <p class="card-text">${val.price}</p>
+                    <div className="ratingBox my-1">
+                      <Rating defaultValue={val.rating.rate} />
+                      <span>({val.rating.count})</span>
+                    </div>
                     <NavLink
                       className="moreDetails"
                       to={`product/${val.id}`}

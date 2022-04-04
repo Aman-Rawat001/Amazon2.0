@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Homepage from "./components/Homepage/Homepage";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import AddToCart from "./components/addToCart/AddToCart";
+import SignIn from "./components/SignIn/SignIn";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Homepage />} />
             <Route exact path="/add-to-cart" element={<AddToCart />} />
+            <Route exact path="/sign-in" element={<SignIn />} />
             <Route
               path="/product/:productId"
               exact

@@ -47,7 +47,9 @@ const Header = () => {
             <div className="delivertouser  NavflexBox">
               <div className="navContent">
                 <p className="navLightFont">Hello, User</p>
-                <p className="navBoldFont">Sign In</p>
+                <NavLink to="/sign-in">
+                  <p className="navBoldFont">Sign In</p>
+                </NavLink>
               </div>
             </div>
             <div className="delivertouser  NavflexBox ms-4">

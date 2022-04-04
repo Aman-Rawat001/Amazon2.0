@@ -4,3 +4,6 @@
   border: navajowhite;
   padding: 4px;
 }
+.ratingBox {
+  display: flex;
+}

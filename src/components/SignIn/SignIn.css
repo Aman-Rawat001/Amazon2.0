@@ -1,0 +1,59 @@
+.signIn {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 95vh;
+}
+.signIn > div {
+  width: 30%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.signIn .signInBox {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+.signIn div .logo img {
+  width: 8rem;
+}
+.signIn .inputBlock p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.signIn .inputBlock input {
+  width: 100%;
+}
+.signIn .signInBtn button {
+  background-color: #f0c14b;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-top: 3px;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
+.signIn .signInBox {
+  width: 22rem;
+}
+.signIn .formDesc {
+  font-size: 15px;
+  line-height: 12pt;
+}
+.signIn .formDesc small {
+  line-height: 10pt;
+}
+.signIn .createAccBtn button {
+  background-color: white;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-top: 3px;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
