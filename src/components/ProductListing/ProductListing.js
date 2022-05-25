@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProductComponent from "../Homepage/ProductComponent";
+import TrendCarousel from "../Homepage/TrendCarousel/TrendCarousel";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/index";
 
@@ -35,7 +36,12 @@ const ProductListing = () => {
           <strong>Loading Products...</strong>
         </div>
       ) : (
-        <ProductComponent />
+        <>
+          <ProductComponent />
+          <div className="mt-2">
+            <TrendCarousel />
+          </div>
+        </>
       )}
     </div>
   );

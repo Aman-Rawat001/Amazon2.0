@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { addToCart } from "../../redux/actions/index";
 import Rating from "@mui/material/Rating";
-import Stack from "@mui/material/Stack";
 
 const ProductComponent = () => {
   const [productSelecter, setProductSelecter] = useState([]);
@@ -14,7 +13,7 @@ const ProductComponent = () => {
   const ATCProducts = useSelector(
     (state) => state.addToCartReducer.cartProducts
   );
-  console.log(ATCProducts);
+  // console.log(ATCProducts);
 
   const temp = {};
   const handleAddToCart = (val) => {
@@ -22,7 +21,7 @@ const ProductComponent = () => {
     dispatch(addToCart(productSelecter));
     // console.log(productSelecter);
   };
-
+  // console.log("homepage");
   useEffect(() => {
     setProductSelecter(ATCProducts);
   }, []);

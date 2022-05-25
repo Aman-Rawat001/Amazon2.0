@@ -1,5 +1,6 @@
 import React from "react";
 import ProductListing from "../ProductListing/ProductListing";
+import TrendCarousel from "./TrendCarousel/TrendCarousel";
 import heroScreen from "../../Assets/Images/heroImg.jpg";
 import "./Homepage.css";
 
